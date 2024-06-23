@@ -79,6 +79,9 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name("aicoach-xxxxxxxx
 client = gspread.authorize(credentials)
 #workbook = client.open("customerlog")
 workbook = client.open("aicoach")
+# spredsheet url 
+# https://docs.google.com/spreadsheets/d/1U8Xa8UaJYWISzoaQEEn6AUpKDiO7ROwL11PBQYe-m1w/edit?usp=sharing
+# spreadsheet url
 #sheets = client.open("customerlog")
 # Config Parser
 config = configparser.ConfigParser()
