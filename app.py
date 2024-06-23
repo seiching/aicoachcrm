@@ -75,7 +75,7 @@ def pop_user_msg(user_id):
 scope = ['https://www.googleapis.com/auth/spreadsheets',
          "https://www.googleapis.com/auth/drive"]
 
-credentials = ServiceAccountCredentials.from_json_keyfile_name("aicoach-427307-be89518eeca1.json", scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name("aicoach-xxxxxxxx.json", scope)
 client = gspread.authorize(credentials)
 #workbook = client.open("customerlog")
 workbook = client.open("aicoach")
