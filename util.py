@@ -7,7 +7,7 @@ import configparser
 config = configparser.ConfigParser()
 config.read("config.ini")
 Line_Channel_Access_Token = config["Line"]["CHANNEL_ACCESS_TOKEN"]
-NGROK_AUTH_TOKEN = config["gnrok"]["NGROK_AUTH_TOKEN"]
+NGROK_AUTH_TOKEN = config["ngrok"]["NGROK_AUTH_TOKEN"]
 
 def auto_update_webhook_url(stop_event):
     global ngrok_url

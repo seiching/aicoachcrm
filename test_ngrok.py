@@ -5,7 +5,7 @@ import configparser
 
 config = configparser.ConfigParser()
 config.read("config.ini")
-NGROK_AUTH_TOKEN = config["gnrok"]["NGROK_AUTH_TOKEN"]
+NGROK_AUTH_TOKEN = config["ngrok"]["NGROK_AUTH_TOKEN"]
 
 ngrok.set_auth_token(NGROK_AUTH_TOKEN)
 
