@@ -6,3 +6,6 @@ configparser
 openai
 gspread
 oauth2client
+pyngrok
+requests
+git+https://github.com/gstaff/flask-ngrok
