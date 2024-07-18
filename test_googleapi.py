@@ -19,11 +19,11 @@ key_file = config["google"]["key_file"]
 credentials = ServiceAccountCredentials.from_json_keyfile_name(key_file, scope)  # key_file: Google OAuth 2.0 憑證檔
 client = gspread.authorize(credentials)
 workbook = client.open("LLM_worksheet")  # 個人帳號授權給服務帳號的spread sheet
-sheet = workbook.get_worksheet(1)
+sheet = workbook.worksheet('limit')
 user_limit = int(sheet.acell('A1').value)
 print(user_limit)
 
-log_sheet = workbook.get_worksheet(0)
+log_sheet = workbook.worksheet('log')
 rows = [
     ["Name", "Age", "City"],
     ["Alice", 30, "New York"],
