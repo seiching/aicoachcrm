@@ -81,7 +81,7 @@ This repository contains a Line chatbot application that leverages the OpenAI Ch
 
 ## Testing
 
-Run the unit tests to ensure everything is working correctly:
+Run the unit tests to ensure everything is working correctly.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
